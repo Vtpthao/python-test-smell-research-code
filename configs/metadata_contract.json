@@ -1,0 +1,45 @@
+{
+  "variant": "SOURCE_FREE_METADATA_PROJECTION_V2",
+  "rows": 14755,
+  "original_dataset_sha256": "ad1d9cd262f11b6ba29287e791c4cdd1be3d8dd3bbb36b949821b8bd807448da",
+  "public_metadata_path": "dataset/final/python_4label_test_smell_metadata_v2.csv",
+  "public_metadata_sha256": "322e9a55fd0156383baed7a75c106cbfab76ba8c8ede82aea83cbad7800abe34",
+  "retained_columns": [
+    "sample_id",
+    "project_name",
+    "file_path",
+    "class_name",
+    "method_name",
+    "definition_line",
+    "AR",
+    "CTL",
+    "MNT",
+    "ET",
+    "label_count",
+    "AR_provenance",
+    "CTL_provenance",
+    "MNT_provenance",
+    "ET_provenance"
+  ],
+  "omitted_columns": [
+    "source_code"
+  ],
+  "sample_id_order_preserved": true,
+  "labels_and_projects_preserved": true,
+  "original_dataset_included": false,
+  "historical_scripts_modified": false,
+  "historical_training_runnable_from_public_csv": false,
+  "label_order": [
+    "AR",
+    "CTL",
+    "MNT",
+    "ET"
+  ],
+  "recorded_environment": {
+    "python": "3.12.14",
+    "numpy": "2.5.2",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.0"
+  },
+  "metadata_privacy_screen_pattern_hits": []
+}

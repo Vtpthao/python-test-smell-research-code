@@ -22,7 +22,6 @@ from sklearn.metrics import (
     hamming_loss,
     precision_recall_fscore_support,
 )
-from input_preflight import preflight_r1_or_exit
 
 ROOT = Path(__file__).resolve().parents[1]
 FINAL = ROOT / "dataset/final"
@@ -183,7 +182,6 @@ def fmt(value: float | int) -> str:
 
 
 def main() -> None:
-    preflight_r1_or_exit(ROOT)
     # Verify every frozen input before any model fitting begins.
     for path, expected in EXPECTED_HASHES.items():
         actual = sha256(path)

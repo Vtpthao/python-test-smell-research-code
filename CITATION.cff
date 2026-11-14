@@ -1,9 +1,19 @@
 cff-version: 1.2.0
-message: "If you use this code, please cite the associated research paper once its bibliographic details are available."
-authors:
-  - family-names: Vo
-    given-names: Thi Phuong Thao
-title: "Python Multi-Label Test Smell Detection — Research Code"
+message: "Please cite this repository/software using the preferred citation. This is not a conference-paper citation."
 type: software
-license: MIT
+title: "Python Multi-Label Test Smell Detection: Research Dataset and Experimental Code"
+authors:
+  - family-names: "Vo"
+    given-names: "Thi Phuong Thao"
 repository-code: "https://github.com/Vtpthao/python-test-smell-research-code"
+url: "https://github.com/Vtpthao/python-test-smell-research-code"
+preferred-citation:
+  type: software
+  title: "Python Multi-Label Test Smell Detection: Research Dataset and Experimental Code"
+  authors:
+    - family-names: "Vo"
+      given-names: "Thi Phuong Thao"
+  year: 2026
+  url: "https://github.com/Vtpthao/python-test-smell-research-code"
+  repository-code: "https://github.com/Vtpthao/python-test-smell-research-code"
+  notes: "Repository-only citation supplied by the owner. No DOI or FJCAI acceptance/publication claim is made. Code and data have separate license scopes; see README."

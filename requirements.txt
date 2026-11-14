@@ -1,10 +1,6 @@
-# Candidate runtime for the recorded V2 R1 and analysis code.
-# Supported target: CPython 3.12; install success and numerical reproduction are not certified here.
+# Historical experiment dependency pins; Python 3.12.14.
+# validate_release.py uses only the Python standard library.
+# Installing these packages does not restore missing source/canonical/cache inputs.
 numpy==2.5.2
 scipy==1.18.1
 scikit-learn==1.9.0
-
-# scikit-learn 1.9.0 runtime dependencies from its PyPI metadata.
-joblib>=1.4.0
-narwhals>=2.0.1
-threadpoolctl>=3.5.0

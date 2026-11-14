@@ -1,0 +1,9 @@
+metric,value,aggregation,zero_division_policy
+hamming_loss,0.13187055235513384,pooled OOP,not applicable
+exact_match_ratio,0.5898339545916639,pooled OOP,not applicable
+micro_precision,0.6141610447484063,pooled OOP,zero_division=0; presentation NA recorded per label
+micro_recall,0.8649755927475593,pooled OOP,zero_division=0; presentation NA recorded per label
+micro_f1,0.7183032321111875,pooled OOP,zero_division=0; presentation NA recorded per label
+macro_precision,0.5824756976253834,pooled OOP,zero_division=0; presentation NA recorded per label
+macro_recall,0.8036142159173538,pooled OOP,zero_division=0; presentation NA recorded per label
+macro_f1,0.6607479797944884,pooled OOP,zero_division=0; presentation NA recorded per label

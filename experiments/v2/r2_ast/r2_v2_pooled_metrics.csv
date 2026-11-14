@@ -1,0 +1,9 @@
+metric,value,aggregation,zero_division_policy
+hamming_loss,0.11291087766858691,pooled OOP,not applicable
+exact_match_ratio,0.6448661470687902,pooled OOP,not applicable
+micro_precision,0.7496365524402907,pooled OOP,zero_division=0 for sklearn-compatible computational aggregation
+micro_recall,0.629271269177127,pooled OOP,zero_division=0 for sklearn-compatible computational aggregation
+micro_f1,0.6842005497109279,pooled OOP,zero_division=0 for sklearn-compatible computational aggregation
+macro_precision,0.5950705168389443,pooled OOP,zero_division=0 for sklearn-compatible computational aggregation
+macro_recall,0.5091830369424595,pooled OOP,zero_division=0 for sklearn-compatible computational aggregation
+macro_f1,0.5450996918210858,pooled OOP,zero_division=0 for sklearn-compatible computational aggregation

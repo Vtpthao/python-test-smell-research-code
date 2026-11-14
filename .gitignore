@@ -1,15 +1,11 @@
-# Do not commit research inputs, outputs, models, or caches
-dataset/
-experiments/
-*.npy
-*.npz
-*.pkl
-*.joblib
-*.csv
-*.parquet
-__pycache__/
-.pytest_cache/
 .venv/
-.env
-.env.*
+__pycache__/
+*.py[cod]
 .DS_Store
+repositories/
+reproduced/
+*.npy
+*.safetensors
+pytorch_model.bin
+dataset/final/python_4label_test_smell_experimental_v2.csv
+dataset/final/python_multilabel_test_smell_dataset_v1.csv
