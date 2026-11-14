@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the associated research paper once its bibliographic details are available."
+authors:
+  - family-names: Vo
+    given-names: Thi Phuong Thao
+title: "Python Multi-Label Test Smell Detection — Research Code"
+type: software
+license: MIT
+repository-code: "https://github.com/Vtpthao/python-test-smell-research-code"

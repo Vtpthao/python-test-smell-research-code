@@ -1,0 +1,15 @@
+# Do not commit research inputs, outputs, models, or caches
+dataset/
+experiments/
+*.npy
+*.npz
+*.pkl
+*.joblib
+*.csv
+*.parquet
+__pycache__/
+.pytest_cache/
+.venv/
+.env
+.env.*
+.DS_Store
