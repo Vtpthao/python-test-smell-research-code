@@ -1,9 +1,11 @@
 # Python Multi-Label Test Smell Detection
 
-Source-free repository/software release candidate for owner review. Intended
-repository: https://github.com/Vtpthao/python-test-smell-research-code.
-Nothing has been committed, pushed, published, or made public by this preparation.
-This is not an assertion that an FJCAI 2027 paper is accepted or published.
+Public, source-free research artifact accompanying the Python multi-label test
+smell detection study. This repository provides metadata, original experiment
+scripts, frozen predictions and evaluation outputs. It does not contain the
+original third-party source code or support full training from public inputs.
+Repository availability does not imply acceptance or publication of the
+FJCAI 2027 paper.
 
 ## Dataset and Provenance
 
@@ -39,11 +41,40 @@ machine paths, credential literals or copied source-context fields are included.
 | MNT | Magic Number Test | 1844 | 12911 |
 | ET | Eager Test | 1280 | 13475 |
 
-AR/CTL/MNT are deterministic static silver labels. ET is an assistant-semantic
-reference, not population-wide independently human-adjudicated gold truth.
-Selected confirmation/review records do not establish whole-population accuracy
-or human review. Ten unresolved ET methods were excluded historically from the
-14,765-method canonical population; this release makes no additional exclusions.
+### Annotation workflow and review scope
+
+AR, CTL and MNT reference labels were generated using deterministic static
+rules and are treated as silver labels. PyNose was used for comparison with
+the custom detector on selected static-rule labels; it was not the source
+of the ET annotation workflow.
+
+ET labels followed a separate staged annotation process. After the initial
+analysis, 2,752 low-confidence or ambiguous ET cases proceeded to a second
+stage involving human review. Within those 2,752 cases, 737 remained difficult
+after the second stage; AI-assisted semantic analysis was used as supporting
+evidence for these cases, while humans made the final labeling decisions.
+AI assistance was not an autonomous source of final ET labels.
+
+An additional review batch comprised 48 cases with differing outputs from
+PyNose and the custom detector, plus 500 randomly selected cases used to
+check labeling accuracy. The 500-case random sample was selected separately
+and did not overlap the 2,752 ET cases. The documented review workload totals
+3,300 review cases (2,752 + 48 + 500); this is a count of review cases,
+not a claim that 3,300 distinct methods have a fully recoverable, expert-gold
+method-level adjudication record. The 737 difficult ET cases are a subset of
+the 2,752, not an additional batch. These figures describe the historical
+annotation workflow and are not independently reconstructed from the
+source-free public metadata.
+
+Ten unresolved ET methods were excluded historically from the 14,765-method
+canonical population; eight of those ten belonged to the 737 difficult ET
+cases. The released 14,755-method dataset makes no additional exclusions.
+The public labels remain research reference labels rather than independently
+expert-validated ground truth for the entire population. The repository does
+not include the full method-level review ledger or paired detector outputs,
+so it cannot independently reproduce inter-detector agreement, Cohen's kappa,
+or the exact count of labels corrected during review.
+
 All 16 label combinations occur; 7,318 methods have no positive label.
 
 The source-free privacy check inspects the exact retained schema, every retained
@@ -59,8 +90,7 @@ copies, with no altered models, feature extraction, labels, thresholds or hashes
 Their data-loading/feature/LOPO/metric helpers are inside these files; H12-B's
 required first-party H12 module is included. No labeling, construction or PyNose
 code, third-party source tree, pretrained weights or embedding matrix is included.
-The owner's independent authorship and authority to license this original code
-were explicitly confirmed for this release.
+The first-party code is provided under the scoped license described below.
 
 experiments/v2/ contains the final frozen predictions, pooled metrics, per-label,
 per-project and project-label metrics plus original run manifests for all five
@@ -94,7 +124,7 @@ release-support validator is not an invented historical experiment implementatio
 
 The optional dependencies for importing the historical runners are recorded
 in requirements.txt; the matching existing research environment was Python
-3.12.14. For a new environment, after owner approval for installation:
+3.12.14. For a new environment:
 
 ```sh
 python3.12 -m venv .venv
@@ -102,7 +132,7 @@ python3.12 -m venv .venv
 python -m pip install -r requirements.txt
 ```
 
-No installation or full training was performed to create this release.
+This validation command does not train models or reconstruct omitted inputs.
 
 ## Training Limitations and Historical Commands
 
@@ -173,6 +203,6 @@ right. No unrelated institutional or co-owner consent is invented.
 Use CITATION.cff: Vo Thi Phuong Thao (2026), *Python Multi-Label Test Smell
 Detection: Research Dataset and Experimental Code*,
 https://github.com/Vtpthao/python-test-smell-research-code.
-There is no DOI and no FJCAI paper acceptance/publication claim. Internal audit
-reports are outside this folder/ZIP. Review this candidate before publication;
-no commit, push, upload or visibility change is authorized by preparation alone.
+There is no DOI or claim that the FJCAI paper has been accepted or published.
+Internal audit reports and the original method-level annotation ledger are
+not distributed in this repository.
